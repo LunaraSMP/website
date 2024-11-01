@@ -1,3 +1,18 @@
+# _config.yml
+title: Lunara SMP Website
+description: This is a simple website hosted with GitHub Pages.
+baseurl: "/website" # the subpath of your site, e.g. /blog
+url: "https://lunarasmp.github.io" # the base hostname & protocol for your site
+author: BlockMasters
+
+# Build settings
+markdown: kramdown
 remote_theme: pages-themes/modernist@v0.2.0
+
+# Exclude files and directories from the build process
+exclude:
+  - README.md
+
+# Plugins
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
