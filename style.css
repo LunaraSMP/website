@@ -1,1 +1,54 @@
-test
+/* style.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #777;
+}
