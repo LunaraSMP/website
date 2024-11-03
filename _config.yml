@@ -1,18 +1,77 @@
-# _config.yml
 title: Lunara SMP Website
-description: This is a simple website hosted with GitHub Pages.
+author: BlockMasters
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome to the Lunara SMP Website. Join us for a unique Minecraft adventure with custom content and exciting gameplay!
 baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "https://lunarasmp.github.io" # the base hostname & protocol for your site
-author: BlockMasters
+twitter_username: your-twitter-handle
+github_username:  your-github-username
 
 # Build settings
 markdown: kramdown
-remote_theme: pages-themes/slate@v0.2.0
+theme: jekyll-theme-slate
 
-# Exclude files and directories from the build process
-exclude:
-  - README.md
+# Defaults for all collections
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: BlockMasters
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author: BlockMasters
 
 # Plugins
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation links
+navigation:
+  - name: "Home"
+    link: "/"
+  - name: "About"
+    link: "/about/"
+  - name: "Blog"
+    link: "/blog/"
+  - name: "Community"
+    link: "/community/"
+  - name: "Support"
+    link: "/support/"
+  - name: "Store"
+    link: "/store/"
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include
+include:
+  - _pages
+  - _posts
+  - assets
+  - css
+
+# Other settings
+jekyll-feed:
+  path: feed.xml
+
+jekyll-seo-tag:
+  og: true
+  twitter:
+    card: summary
+    site: "@your-twitter-handle"
+    creator: "@your-twitter-handle"
