@@ -1,27 +1,38 @@
+---
+layout: nil
+---
+
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Lunara SMP Website</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% include head.html %}
+</head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="{{ site.baseurl }}/" class="logo">Lunara SMP</a>
-                <ul class="nav-links">
-                    <li><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li><a href="{{ site.baseurl }}/about/">About</a></li>
-                    <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-                    <li><a href="{{ site.baseurl }}/community/">Community</a></li>
-                    <li><a href="{{ site.baseurl }}/support/">Support</a></li>
-                    <li><a href="{{ site.baseurl }}/store/">Store</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    {{ content }}
-    <footer>
+    <nav class="navbar">
         <div class="container">
-            <p>© 2024 {{ site.author }}. All rights reserved.</p>
-            <p>Website designed with help from ChatGPT.</p>
+            <a href="{{ site.baseurl }}/" class="logo">Lunara SMP</a>
+            <ul class="nav-links">
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/pages/about.md">About</a></li>
+                <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/pages/community.md">Community</a></li>
+                <li><a href="{{ site.baseurl }}/pages/store.md">Store</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; {{ site.time | date: '%Y' }} Lunara SMP. All rights reserved.</p>
+            <p>Website created with help from ChatGPT.</p>
         </div>
     </footer>
 </body>
