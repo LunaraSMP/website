@@ -3,22 +3,24 @@ layout: default
 title: Home
 ---
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/about/">About</a></li>
-            <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-            <li><a href="{{ site.baseurl }}/community/">Community</a></li>
-            <li><a href="{{ site.baseurl }}/support/">Support</a></li>
-            <li><a href="{{ site.baseurl }}/store/">Store</a></li>
-        </ul>
-    </nav>
-</header>
-<h1>Welcome to Lunara SMP Website</h1>
-<p>Experience a unique Minecraft adventure with custom content and exciting gameplay.</p>
-<a href="#" class="button">Join Now</a>
-<footer>
-    <p>© 2024 {{ site.author }}. All rights reserved.</p>
-    <p>Website designed with help from ChatGPT.</p>
-</footer>
+<div class="hero">
+  <h1>Welcome to Lunara SMP</h1>
+  <p>Join us for a unique Minecraft adventure with custom content and exciting gameplay!</p>
+  <a href="/community/" class="cta-button">Join Now</a>
+</div>
+
+<div class="content">
+  <section class="section">
+    <h2>About Us</h2>
+    <p>Discover the world of Lunara SMP, a Minecraft server like no other. Explore, build, and create with friends!</p>
+  </section>
+  <section class="section">
+    <h2>Latest Blog Posts</h2>
+    <!-- Add code to list blog posts -->
+  </section>
+  <section class="section">
+    <h2>Community</h2>
+    <p>Connect with fellow players, share your creations, and participate in events!</p>
+  </section>
+</div>
+
