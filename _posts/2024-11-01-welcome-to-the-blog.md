@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Welcome to the Lunara SMP Blog"
+title: "Welcome to the Blog"
 date: 2024-11-01
-categories: blog
 ---
 
-Welcome to the Lunara SMP Blog! This is our first post. Stay tuned for more updates! Also, join our Discord Server 
+<h2>Welcome to the Lunara SMP Blog!</h2>
+<p>Here you'll find the latest news, updates, and events happening on our server.</p>
